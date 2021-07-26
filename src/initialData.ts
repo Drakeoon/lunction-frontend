@@ -1,4 +1,4 @@
-interface Meal {
+export interface Meal {
   id: number;
   name: string;
   ingredients: object;
@@ -60,11 +60,32 @@ export const meals: Array<Meal> = [
 ];
 
 export const days = [
-  "monday",
-  "tuesday",
-  "wednesday",
-  "thursday",
-  "friday",
-  "saturday",
-  "sunday",
+  {
+    name: "monday",
+    meals: [1, 1],
+  },
+  {
+    name: "tuesday",
+    meals: [],
+  },
+  {
+    name: "wednesday",
+    meals: [1],
+  },
+  {
+    name: "thursday",
+    meals: [],
+  },
+  {
+    name: "friday",
+    meals: [2],
+  },
+  {
+    name: "saturday",
+    meals: [],
+  },
+  {
+    name: "sunday",
+    meals: [],
+  },
 ];
