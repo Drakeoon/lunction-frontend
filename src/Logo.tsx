@@ -1,6 +1,6 @@
 import logoSrc from "./assets/logo.png";
 
-const Logo = (props: any) => {
+const Logo = () => {
   return <img src={logoSrc} alt="lunction" className="logo" />;
 };
 
