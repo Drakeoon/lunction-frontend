@@ -14,9 +14,9 @@ import {
 import { meals, days as initialDays, Meal } from "./initialData";
 import "./styles/main.sass";
 
-const MealCard = ({ meal, mt }: { meal: Meal; mt?: number }) => {
+const MealCard = ({ meal }: { meal: Meal }) => {
   return (
-    <Box mx={2} p={1} bg="teal.300" borderRadius="4" pos="relative" mt={mt}>
+    <Box mx={2} p={1} bg="teal.300" borderRadius="4" pos="relative">
       <Image height={100} src={meal.imageUrl} alt={meal.name} />
 
       <Box>
@@ -124,7 +124,7 @@ function App() {
                           return null;
                         }
 
-                        return <MealCard meal={meal} mt={6} />;
+                        return <MealCard meal={meal} />;
                       })}
                     </div>
 
